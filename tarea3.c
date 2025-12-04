@@ -18,27 +18,25 @@ int marcos_swap_usados = 0;
 int *memoria_ram = NULL;      
 int *memoria_swap = NULL;
 
-// Archivo de log
 FILE *archivo_log = NULL;
 
-// Colores ANSI para los procesos
 const char* colores[] = {
-    "\033[1;32m",  // Verde brillante - P0
-    "\033[1;36m",  // Cian brillante - P1
-    "\033[1;33m",  // Amarillo brillante - P2
-    "\033[1;35m",  // Magenta brillante - P3
-    "\033[1;34m",  // Azul brillante - P4
-    "\033[1;31m",  // Rojo brillante - P5
-    "\033[0;32m",  // Verde - P6
-    "\033[0;36m",  // Cian - P7
-    "\033[0;33m",  // Amarillo - P8
-    "\033[0;35m",  // Magenta - P9
-    "\033[0;34m",  // Azul - P10
-    "\033[0;31m",  // Rojo - P11
-    "\033[1;37m",  // Blanco brillante - P12
-    "\033[0;37m",  // Blanco - P13
-    "\033[1;30m",  // Gris brillante - P14
-    "\033[0;30m",  // Gris - P15
+    "\033[1;32m", 
+    "\033[1;36m",  
+    "\033[1;33m",  
+    "\033[1;35m",  
+    "\033[1;34m", 
+    "\033[1;31m",  
+    "\033[0;32m",  
+    "\033[0;36m",  
+    "\033[0;33m", 
+    "\033[0;35m", 
+    "\033[0;34m", 
+    "\033[0;31m",  
+    "\033[1;37m",  
+    "\033[0;37m",
+    "\033[1;30m", 
+    "\033[0;30m",  
 };
 
 const int num_colores = 16;
@@ -166,7 +164,7 @@ int crear_proceso(int id, int tamanio_pagina_kb) {
     printf("\n%s┌─ Intentando crear: %s%s\n", obtener_color(id), procesos[indice].nombre, reset_color);
     printf("%s│  Tamaño proceso: %d MB (%d páginas necesarias)%s\n", 
            obtener_color(id), procesos[indice].tamaño, procesos[indice].num_paginas, reset_color);
-    printf("│  📊 Memoria disponible ANTES:\n");
+    printf("│     Memoria disponible ANTES:\n");
     printf("│     └─ RAM:   %d/%d marcos libres\n", marcos_libres_ram, marcos_ram_totales);
     printf("│     └─ SWAP:  %d/%d marcos libres\n", marcos_libres_swap, marcos_swap_totales);
     printf("│     └─ TOTAL: %d marcos disponibles\n", marcos_libres_total);
@@ -183,7 +181,7 @@ int crear_proceso(int id, int tamanio_pagina_kb) {
     }
     
     if (!asignar_proceso(&procesos[indice])) {
-        printf("%s└─ ❌ FALLO: No hay memoria suficiente%s\n", obtener_color(id), reset_color);
+        printf("%s└─ FALLO: No hay memoria suficiente%s\n", obtener_color(id), reset_color);
         if (archivo_log != NULL) {
             fprintf(archivo_log, "\n[RESULTADO] FALLO - No hay memoria suficiente\n");
         }
@@ -195,7 +193,7 @@ int crear_proceso(int id, int tamanio_pagina_kb) {
     marcos_libres_total = marcos_libres_ram + marcos_libres_swap;
     
     printf("%s└─ ✓ ÉXITO: Proceso creado%s\n", obtener_color(id), reset_color);
-    printf("   📊 Memoria disponible DESPUÉS:\n");
+    printf("    Memoria disponible DESPUÉS:\n");
     printf("      └─ RAM:   %d/%d marcos libres\n", marcos_libres_ram, marcos_ram_totales);
     printf("      └─ SWAP:  %d/%d marcos libres\n", marcos_libres_swap, marcos_swap_totales);
     printf("      └─ TOTAL: %d marcos disponibles\n", marcos_libres_total);
@@ -264,9 +262,9 @@ void terminar_proceso_aleatorio() {
     
     int proceso_mas_antiguo = -1;
     time_t tiempo_mas_antiguo = time(NULL) + 1000;
-    
-    printf("\n🔍 Buscando proceso más antiguo (FIFO):\n");
-    printf("─────────────────────────────────────────\n");
+    printf("---------------------------------------\n");
+    printf("\n Buscando proceso más antiguo (FIFO):\n");
+    printf("---------------------------------------\n");
     
     for (int i = 0; i < MAX_PROCESOS; i++) {
         if (procesos[i].activo) {
@@ -284,14 +282,14 @@ void terminar_proceso_aleatorio() {
     }
     
     if (proceso_mas_antiguo != -1) {
-        printf("➡️  Seleccionado para terminar: %sP%d%s (el más antiguo)\n", 
+        printf("  Seleccionado para terminar: %sP%d%s (el más antiguo)\n", 
                obtener_color(procesos[proceso_mas_antiguo].id),
                procesos[proceso_mas_antiguo].id,
                reset_color);
-        printf("─────────────────────────────────────────\n\n");
+        printf("-----------------------------------------------\n");
         
         if (archivo_log != NULL) {
-            fprintf(archivo_log, "\n=== FIFO: Seleccionando proceso más antiguo ===\n");
+            fprintf(archivo_log, "\n--- FIFO: Seleccionando proceso más antiguo ---\n");
             fprintf(archivo_log, "Proceso seleccionado: P%d (creado hace %ld segundos)\n",
                     procesos[proceso_mas_antiguo].id,
                     time(NULL) - procesos[proceso_mas_antiguo].tiempo_creacion);
@@ -307,7 +305,7 @@ void guardar_matriz_en_log(int *memoria, int total_marcos, const char *tipo) {
     int filas = (int)sqrt(total_marcos);
     int columnas = (total_marcos + filas - 1) / filas;
     
-    fprintf(archivo_log, "\n=== %s ===\n", tipo);
+    fprintf(archivo_log, "\n---- %s ----\n", tipo);
     fprintf(archivo_log, "Dimensiones: %d x %d = %d marcos\n", filas, columnas, total_marcos);
     fprintf(archivo_log, "Uso: %d/%d marcos (%.1f%%)\n", 
             strcmp(tipo, "RAM") == 0 ? marcos_ram_usados : marcos_swap_usados,
@@ -335,17 +333,17 @@ void guardar_matriz_en_log(int *memoria, int total_marcos, const char *tipo) {
 }
 
 void mostrar_estado() {
-    printf("\n╔═══════════════════════════════════╗\n");
+    printf("\n______________________________________\n");
     printf("│ RAM:  %d/%d marcos (%.1f%%)     │\n", 
            marcos_ram_usados, marcos_ram_totales,
            100.0 * marcos_ram_usados / marcos_ram_totales);
     printf("│ SWAP: %d/%d marcos (%.1f%%)     │\n", 
            marcos_swap_usados, marcos_swap_totales,
            100.0 * marcos_swap_usados / marcos_swap_totales);
-    printf("╚═══════════════════════════════════╝\n");
+    printf("\n______________________________________\n");
     
     if (archivo_log != NULL) {
-        fprintf(archivo_log, "\n=== Estado del Sistema ===\n");
+        fprintf(archivo_log, "\n--- Estado del Sistema ---\n");
         fprintf(archivo_log, "RAM:  %d/%d marcos (%.1f%%)\n", 
                 marcos_ram_usados, marcos_ram_totales,
                 100.0 * marcos_ram_usados / marcos_ram_totales);
@@ -360,10 +358,7 @@ void mostrar_visualizacion_completa() {
     system("clear");
     
     printf("\n");
-    printf("████████████████████████████████████████████████████████\n");
-    printf("█        SIMULADOR DE GESTIÓN DE MEMORIA              █\n");
-    printf("████████████████████████████████████████████████████████\n");
-    
+    printf("----------SIMULADOR DE GESTIÓN DE MEMORIA----------\n");
     mostrar_estado();
     
     printf("\n📋 Procesos Activos: %d\n", num_procesos_activos);
@@ -409,21 +404,21 @@ int main() {
     int memoria_virtual = memoria_fisica * factor;
     int tamanio_swap = memoria_virtual - memoria_fisica;
     
-    printf("\n=== Configuración del Sistema ===\n");
+    printf("\n--- Configuración del Sistema ---\n");
     printf("Memoria Física (RAM): %d MB\n", memoria_fisica);
     printf("Memoria Virtual: %d MB (factor: %.2f)\n", memoria_virtual, factor);
     printf("Memoria Swap: %d MB\n", tamanio_swap);
     printf("Tamaño de página: %d KB\n", tamanio_pagina);
-    printf("================================\n\n");
+    printf("-------------------------------\n\n");
 
     if (archivo_log != NULL) {
-        fprintf(archivo_log, "=== CONFIGURACIÓN DEL SISTEMA ===\n");
+        fprintf(archivo_log, "--- CONFIGURACIÓN DEL SISTEMA ---\n");
         fprintf(archivo_log, "Memoria Física (RAM): %d MB\n", memoria_fisica);
         fprintf(archivo_log, "Memoria Virtual: %d MB (factor: %.2f)\n", memoria_virtual, factor);
         fprintf(archivo_log, "Memoria Swap: %d MB\n", tamanio_swap);
         fprintf(archivo_log, "Tamaño de página: %d KB\n", tamanio_pagina);
         fprintf(archivo_log, "Tamaño de procesos: %d-%d MB\n", MIN_TAMAÑO_PROCESO, MAX_TAMAÑO_PROCESO);
-        fprintf(archivo_log, "=================================\n\n");
+        fprintf(archivo_log, "----------------------------------\n\n");
     }
 
     inicializar_memoria(memoria_fisica, tamanio_swap, tamanio_pagina);
@@ -466,13 +461,13 @@ int main() {
     
     // Guardar matrices solo en el archivo log al final
     if (archivo_log != NULL) {
-        fprintf(archivo_log, "\n\n=== ESTADO FINAL DE LA MEMORIA ===\n");
+        fprintf(archivo_log, "\n\n--- ESTADO FINAL DE LA MEMORIA ---\n");
         fprintf(archivo_log, "Total de procesos creados: %d\n", contador);
         guardar_matriz_en_log(memoria_ram, marcos_ram_totales, "RAM");
         guardar_matriz_en_log(memoria_swap, marcos_swap_totales, "SWAP");
-        fprintf(archivo_log, "\n=== SIMULACIÓN TERMINADA ===\n");
+        fprintf(archivo_log, "\n--- SIMULACIÓN TERMINADA ---\n");
         fclose(archivo_log);
-        printf("📄 Log guardado en: simulacion_log.txt\n");
+        printf("Log guardado en: simulacion_log.txt\n");
     }
     
     if (memoria_ram != NULL) free(memoria_ram);
