@@ -205,7 +205,7 @@ int crear_proceso(int id, int tamanio_pagina_kb) {
         fprintf(archivo_log, "    RAM:   %d/%d marcos libres\n", marcos_libres_ram, marcos_ram_totales);
         fprintf(archivo_log, "    SWAP:  %d/%d marcos libres\n", marcos_libres_swap, marcos_swap_totales);
         fprintf(archivo_log, "    TOTAL: %d marcos disponibles\n", marcos_libres_total);
-        fprintf(archivo_log, "========================================\n");
+        fprintf(archivo_log, "----------------------------------------------------\n");
     }
     
     procesos[indice].activo = true;
