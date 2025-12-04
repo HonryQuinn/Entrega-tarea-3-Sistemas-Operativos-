@@ -170,7 +170,7 @@ int crear_proceso(int id, int tamanio_pagina_kb) {
     printf("│     └─ TOTAL: %d marcos disponibles\n", marcos_libres_total);
     
     if (archivo_log != NULL) {
-        fprintf(archivo_log, "\n========================================\n");
+        fprintf(archivo_log, "\n----------------------------------\n");
         fprintf(archivo_log, "[ANTES DE CREAR] %s\n", procesos[indice].nombre);
         fprintf(archivo_log, "  Tamaño: %d MB (%d páginas)\n", 
                 procesos[indice].tamaño, procesos[indice].num_paginas);
@@ -181,7 +181,7 @@ int crear_proceso(int id, int tamanio_pagina_kb) {
     }
     
     if (!asignar_proceso(&procesos[indice])) {
-        printf("%s└─ FALLO: No hay memoria suficiente%s\n", obtener_color(id), reset_color);
+        printf("%s└─ Fallo: No hay memoria suficiente%s\n", obtener_color(id), reset_color);
         if (archivo_log != NULL) {
             fprintf(archivo_log, "\n[RESULTADO] FALLO - No hay memoria suficiente\n");
         }
@@ -192,14 +192,14 @@ int crear_proceso(int id, int tamanio_pagina_kb) {
     marcos_libres_swap = marcos_swap_totales - marcos_swap_usados;
     marcos_libres_total = marcos_libres_ram + marcos_libres_swap;
     
-    printf("%s└─ ✓ ÉXITO: Proceso creado%s\n", obtener_color(id), reset_color);
-    printf("    Memoria disponible DESPUÉS:\n");
+    printf("%s└─  Éxito: Proceso creado%s\n", obtener_color(id), reset_color);
+    printf("    Memoria disponible después:\n");
     printf("      └─ RAM:   %d/%d marcos libres\n", marcos_libres_ram, marcos_ram_totales);
     printf("      └─ SWAP:  %d/%d marcos libres\n", marcos_libres_swap, marcos_swap_totales);
     printf("      └─ TOTAL: %d marcos disponibles\n", marcos_libres_total);
     
     if (archivo_log != NULL) {
-        fprintf(archivo_log, "\n[RESULTADO] ÉXITO - Asignado: RAM=%d marcos, SWAP=%d marcos\n",
+        fprintf(archivo_log, "\n[Resultado] Éxito - Asignado: RAM=%d marcos, SWAP=%d marcos\n",
                 procesos[indice].marcos_en_ram, procesos[indice].marcos_en_swap);
         fprintf(archivo_log, "  Memoria disponible después:\n");
         fprintf(archivo_log, "    RAM:   %d/%d marcos libres\n", marcos_libres_ram, marcos_ram_totales);
@@ -361,7 +361,7 @@ void mostrar_visualizacion_completa() {
     printf("----------SIMULADOR DE GESTIÓN DE MEMORIA----------\n");
     mostrar_estado();
     
-    printf("\n📋 Procesos Activos: %d\n", num_procesos_activos);
+    printf("\n Procesos Activos: %d\n", num_procesos_activos);
     printf("─────────────────────────────────────\n");
     printf("ID  | Nombre       | Tamaño | RAM  | SWAP | Edad\n");
     printf("────┼──────────────┼────────┼──────┼──────┼──────\n");
@@ -440,7 +440,6 @@ int main() {
             
             mostrar_visualizacion_completa();
             printf("[%d s] Proceso P%d creado\n", tiempo_transcurrido, contador);
-            
             contador++;
             ultimo_creacion = actual;
         }

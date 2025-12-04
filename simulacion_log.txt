@@ -1,899 +1,971 @@
-=== CONFIGURACIÓN DEL SISTEMA ===
+--- CONFIGURACIÓN DEL SISTEMA ---
 Memoria Física (RAM): 512 MB
-Memoria Virtual: 826 MB (factor: 1.61)
-Memoria Swap: 314 MB
+Memoria Virtual: 1889 MB (factor: 3.69)
+Memoria Swap: 1377 MB
 Tamaño de página: 4 KB
 Tamaño de procesos: 5-50 MB
-=================================
+----------------------------------
 
 
-========================================
+----------------------------------
 [ANTES DE CREAR] Proceso_0
-  Tamaño: 12 MB (3072 páginas)
+  Tamaño: 13 MB (3328 páginas)
   Memoria disponible:
     RAM:   131072/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 211456 marcos disponibles
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 483584 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=3072 marcos, SWAP=0 marcos
+[Resultado] Éxito - Asignado: RAM=3328 marcos, SWAP=0 marcos
   Memoria disponible después:
-    RAM:   128000/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 208384 marcos disponibles
+    RAM:   127744/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 480256 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
-RAM:  3072/131072 marcos (2.3%)
-SWAP: 0/80384 marcos (0.0%)
+--- Estado del Sistema ---
+RAM:  3328/131072 marcos (2.5%)
+SWAP: 0/352512 marcos (0.0%)
 Procesos activos: 1
 
-========================================
+----------------------------------
 [ANTES DE CREAR] Proceso_1
-  Tamaño: 49 MB (12544 páginas)
+  Tamaño: 48 MB (12288 páginas)
   Memoria disponible:
-    RAM:   128000/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 208384 marcos disponibles
+    RAM:   127744/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 480256 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=12544 marcos, SWAP=0 marcos
+[Resultado] Éxito - Asignado: RAM=12288 marcos, SWAP=0 marcos
   Memoria disponible después:
     RAM:   115456/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 195840 marcos disponibles
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 467968 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
+--- Estado del Sistema ---
 RAM:  15616/131072 marcos (11.9%)
-SWAP: 0/80384 marcos (0.0%)
+SWAP: 0/352512 marcos (0.0%)
 Procesos activos: 2
 
-========================================
+----------------------------------
 [ANTES DE CREAR] Proceso_2
-  Tamaño: 47 MB (12032 páginas)
+  Tamaño: 25 MB (6400 páginas)
   Memoria disponible:
     RAM:   115456/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 195840 marcos disponibles
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 467968 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=12032 marcos, SWAP=0 marcos
+[Resultado] Éxito - Asignado: RAM=6400 marcos, SWAP=0 marcos
   Memoria disponible después:
-    RAM:   103424/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 183808 marcos disponibles
+    RAM:   109056/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 461568 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
-RAM:  27648/131072 marcos (21.1%)
-SWAP: 0/80384 marcos (0.0%)
+--- Estado del Sistema ---
+RAM:  22016/131072 marcos (16.8%)
+SWAP: 0/352512 marcos (0.0%)
 Procesos activos: 3
 
-========================================
+----------------------------------
 [ANTES DE CREAR] Proceso_3
-  Tamaño: 41 MB (10496 páginas)
-  Memoria disponible:
-    RAM:   103424/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 183808 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=10496 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   92928/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 173312 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  38144/131072 marcos (29.1%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 4
-
-========================================
-[ANTES DE CREAR] Proceso_4
-  Tamaño: 25 MB (6400 páginas)
-  Memoria disponible:
-    RAM:   92928/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 173312 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=6400 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   86528/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 166912 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  44544/131072 marcos (34.0%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 5
-
-========================================
-[ANTES DE CREAR] Proceso_5
-  Tamaño: 31 MB (7936 páginas)
-  Memoria disponible:
-    RAM:   86528/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 166912 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=7936 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   78592/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 158976 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  52480/131072 marcos (40.0%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 6
-
-========================================
-[ANTES DE CREAR] Proceso_6
-  Tamaño: 10 MB (2560 páginas)
-  Memoria disponible:
-    RAM:   78592/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 158976 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=2560 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   76032/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 156416 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  55040/131072 marcos (42.0%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 7
-
-========================================
-[ANTES DE CREAR] Proceso_7
-  Tamaño: 11 MB (2816 páginas)
-  Memoria disponible:
-    RAM:   76032/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 156416 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=2816 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   73216/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 153600 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  57856/131072 marcos (44.1%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 8
-
-========================================
-[ANTES DE CREAR] Proceso_8
-  Tamaño: 30 MB (7680 páginas)
-  Memoria disponible:
-    RAM:   73216/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 153600 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=7680 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   65536/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 145920 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  65536/131072 marcos (50.0%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 9
-
-========================================
-[ANTES DE CREAR] Proceso_9
-  Tamaño: 47 MB (12032 páginas)
-  Memoria disponible:
-    RAM:   65536/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 145920 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=12032 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   53504/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 133888 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  77568/131072 marcos (59.2%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 10
-
-========================================
-[ANTES DE CREAR] Proceso_10
-  Tamaño: 45 MB (11520 páginas)
-  Memoria disponible:
-    RAM:   53504/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 133888 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=11520 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   41984/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 122368 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  89088/131072 marcos (68.0%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 11
-
-========================================
-[ANTES DE CREAR] Proceso_11
-  Tamaño: 18 MB (4608 páginas)
-  Memoria disponible:
-    RAM:   41984/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 122368 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=4608 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   37376/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 117760 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  93696/131072 marcos (71.5%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 12
-
-========================================
-[ANTES DE CREAR] Proceso_12
-  Tamaño: 46 MB (11776 páginas)
-  Memoria disponible:
-    RAM:   37376/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 117760 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=11776 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   25600/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 105984 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  105472/131072 marcos (80.5%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 13
-
-========================================
-[ANTES DE CREAR] Proceso_13
-  Tamaño: 40 MB (10240 páginas)
-  Memoria disponible:
-    RAM:   25600/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 105984 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=10240 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   15360/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 95744 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  115712/131072 marcos (88.3%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 14
-
-========================================
-[ANTES DE CREAR] Proceso_14
-  Tamaño: 15 MB (3840 páginas)
-  Memoria disponible:
-    RAM:   15360/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 95744 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=3840 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   11520/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 91904 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  119552/131072 marcos (91.2%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 15
-
-========================================
-[ANTES DE CREAR] Proceso_15
-  Tamaño: 25 MB (6400 páginas)
-  Memoria disponible:
-    RAM:   11520/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 91904 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=6400 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   5120/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 85504 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  125952/131072 marcos (96.1%)
-SWAP: 0/80384 marcos (0.0%)
-Procesos activos: 16
-
-========================================
-[ANTES DE CREAR] Proceso_16
-  Tamaño: 24 MB (6144 páginas)
-  Memoria disponible:
-    RAM:   5120/131072 marcos libres
-    SWAP:  80384/80384 marcos libres
-    TOTAL: 85504 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=5120 marcos, SWAP=1024 marcos
-  Memoria disponible después:
-    RAM:   0/131072 marcos libres
-    SWAP:  79360/80384 marcos libres
-    TOTAL: 79360 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 1024/80384 marcos (1.3%)
-Procesos activos: 17
-
-=== FIFO: Seleccionando proceso más antiguo ===
-Proceso seleccionado: P0 (creado hace 33 segundos)
-
-[TERMINAR] Proceso_0 (liberados: RAM=3072, SWAP=0 marcos)
-
-=== Estado del Sistema ===
-RAM:  128000/131072 marcos (97.7%)
-SWAP: 1024/80384 marcos (1.3%)
-Procesos activos: 16
-
-========================================
-[ANTES DE CREAR] Proceso_17
-  Tamaño: 10 MB (2560 páginas)
-  Memoria disponible:
-    RAM:   3072/131072 marcos libres
-    SWAP:  79360/80384 marcos libres
-    TOTAL: 82432 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=2560 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   512/131072 marcos libres
-    SWAP:  79360/80384 marcos libres
-    TOTAL: 79872 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  130560/131072 marcos (99.6%)
-SWAP: 1024/80384 marcos (1.3%)
-Procesos activos: 17
-
-========================================
-[ANTES DE CREAR] Proceso_18
-  Tamaño: 39 MB (9984 páginas)
-  Memoria disponible:
-    RAM:   512/131072 marcos libres
-    SWAP:  79360/80384 marcos libres
-    TOTAL: 79872 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=512 marcos, SWAP=9472 marcos
-  Memoria disponible después:
-    RAM:   0/131072 marcos libres
-    SWAP:  69888/80384 marcos libres
-    TOTAL: 69888 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 10496/80384 marcos (13.1%)
-Procesos activos: 18
-
-========================================
-[ANTES DE CREAR] Proceso_19
-  Tamaño: 39 MB (9984 páginas)
-  Memoria disponible:
-    RAM:   0/131072 marcos libres
-    SWAP:  69888/80384 marcos libres
-    TOTAL: 69888 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=0 marcos, SWAP=9984 marcos
-  Memoria disponible después:
-    RAM:   0/131072 marcos libres
-    SWAP:  59904/80384 marcos libres
-    TOTAL: 59904 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 20480/80384 marcos (25.5%)
-Procesos activos: 19
-
-=== FIFO: Seleccionando proceso más antiguo ===
-Proceso seleccionado: P1 (creado hace 36 segundos)
-
-[TERMINAR] Proceso_1 (liberados: RAM=12544, SWAP=0 marcos)
-
-=== Estado del Sistema ===
-RAM:  118528/131072 marcos (90.4%)
-SWAP: 20480/80384 marcos (25.5%)
-Procesos activos: 18
-
-========================================
-[ANTES DE CREAR] Proceso_20
-  Tamaño: 27 MB (6912 páginas)
-  Memoria disponible:
-    RAM:   12544/131072 marcos libres
-    SWAP:  59904/80384 marcos libres
-    TOTAL: 72448 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=6912 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   5632/131072 marcos libres
-    SWAP:  59904/80384 marcos libres
-    TOTAL: 65536 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  125440/131072 marcos (95.7%)
-SWAP: 20480/80384 marcos (25.5%)
-Procesos activos: 19
-
-========================================
-[ANTES DE CREAR] Proceso_21
-  Tamaño: 39 MB (9984 páginas)
-  Memoria disponible:
-    RAM:   5632/131072 marcos libres
-    SWAP:  59904/80384 marcos libres
-    TOTAL: 65536 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=5632 marcos, SWAP=4352 marcos
-  Memoria disponible después:
-    RAM:   0/131072 marcos libres
-    SWAP:  55552/80384 marcos libres
-    TOTAL: 55552 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 24832/80384 marcos (30.9%)
-Procesos activos: 20
-
-=== FIFO: Seleccionando proceso más antiguo ===
-Proceso seleccionado: P2 (creado hace 39 segundos)
-
-[TERMINAR] Proceso_2 (liberados: RAM=12032, SWAP=0 marcos)
-
-=== Estado del Sistema ===
-RAM:  119040/131072 marcos (90.8%)
-SWAP: 24832/80384 marcos (30.9%)
-Procesos activos: 19
-
-========================================
-[ANTES DE CREAR] Proceso_22
-  Tamaño: 20 MB (5120 páginas)
-  Memoria disponible:
-    RAM:   12032/131072 marcos libres
-    SWAP:  55552/80384 marcos libres
-    TOTAL: 67584 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=5120 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   6912/131072 marcos libres
-    SWAP:  55552/80384 marcos libres
-    TOTAL: 62464 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  124160/131072 marcos (94.7%)
-SWAP: 24832/80384 marcos (30.9%)
-Procesos activos: 20
-
-========================================
-[ANTES DE CREAR] Proceso_23
   Tamaño: 38 MB (9728 páginas)
   Memoria disponible:
-    RAM:   6912/131072 marcos libres
-    SWAP:  55552/80384 marcos libres
-    TOTAL: 62464 marcos disponibles
+    RAM:   109056/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 461568 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=6912 marcos, SWAP=2816 marcos
+[Resultado] Éxito - Asignado: RAM=9728 marcos, SWAP=0 marcos
   Memoria disponible después:
-    RAM:   0/131072 marcos libres
-    SWAP:  52736/80384 marcos libres
-    TOTAL: 52736 marcos disponibles
+    RAM:   99328/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 451840 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 27648/80384 marcos (34.4%)
-Procesos activos: 21
+--- Estado del Sistema ---
+RAM:  31744/131072 marcos (24.2%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 4
 
-========================================
-[ANTES DE CREAR] Proceso_24
-  Tamaño: 42 MB (10752 páginas)
+----------------------------------
+[ANTES DE CREAR] Proceso_4
+  Tamaño: 37 MB (9472 páginas)
   Memoria disponible:
-    RAM:   0/131072 marcos libres
-    SWAP:  52736/80384 marcos libres
-    TOTAL: 52736 marcos disponibles
+    RAM:   99328/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 451840 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=0 marcos, SWAP=10752 marcos
+[Resultado] Éxito - Asignado: RAM=9472 marcos, SWAP=0 marcos
   Memoria disponible después:
-    RAM:   0/131072 marcos libres
-    SWAP:  41984/80384 marcos libres
-    TOTAL: 41984 marcos disponibles
+    RAM:   89856/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 442368 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 38400/80384 marcos (47.8%)
-Procesos activos: 22
+--- Estado del Sistema ---
+RAM:  41216/131072 marcos (31.4%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 5
 
-=== FIFO: Seleccionando proceso más antiguo ===
-Proceso seleccionado: P3 (creado hace 42 segundos)
-
-[TERMINAR] Proceso_3 (liberados: RAM=10496, SWAP=0 marcos)
-
-=== Estado del Sistema ===
-RAM:  120576/131072 marcos (92.0%)
-SWAP: 38400/80384 marcos (47.8%)
-Procesos activos: 21
-
-========================================
-[ANTES DE CREAR] Proceso_25
-  Tamaño: 17 MB (4352 páginas)
-  Memoria disponible:
-    RAM:   10496/131072 marcos libres
-    SWAP:  41984/80384 marcos libres
-    TOTAL: 52480 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=4352 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   6144/131072 marcos libres
-    SWAP:  41984/80384 marcos libres
-    TOTAL: 48128 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  124928/131072 marcos (95.3%)
-SWAP: 38400/80384 marcos (47.8%)
-Procesos activos: 22
-
-========================================
-[ANTES DE CREAR] Proceso_26
+----------------------------------
+[ANTES DE CREAR] Proceso_5
   Tamaño: 35 MB (8960 páginas)
   Memoria disponible:
-    RAM:   6144/131072 marcos libres
-    SWAP:  41984/80384 marcos libres
-    TOTAL: 48128 marcos disponibles
+    RAM:   89856/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 442368 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=6144 marcos, SWAP=2816 marcos
+[Resultado] Éxito - Asignado: RAM=8960 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   80896/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 433408 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  50176/131072 marcos (38.3%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 6
+
+----------------------------------
+[ANTES DE CREAR] Proceso_6
+  Tamaño: 49 MB (12544 páginas)
+  Memoria disponible:
+    RAM:   80896/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 433408 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=12544 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   68352/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 420864 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  62720/131072 marcos (47.9%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 7
+
+----------------------------------
+[ANTES DE CREAR] Proceso_7
+  Tamaño: 41 MB (10496 páginas)
+  Memoria disponible:
+    RAM:   68352/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 420864 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=10496 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   57856/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 410368 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  73216/131072 marcos (55.9%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 8
+
+----------------------------------
+[ANTES DE CREAR] Proceso_8
+  Tamaño: 29 MB (7424 páginas)
+  Memoria disponible:
+    RAM:   57856/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 410368 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=7424 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   50432/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 402944 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  80640/131072 marcos (61.5%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 9
+
+----------------------------------
+[ANTES DE CREAR] Proceso_9
+  Tamaño: 48 MB (12288 páginas)
+  Memoria disponible:
+    RAM:   50432/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 402944 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=12288 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   38144/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 390656 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  92928/131072 marcos (70.9%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 10
+
+----------------------------------
+[ANTES DE CREAR] Proceso_10
+  Tamaño: 5 MB (1280 páginas)
+  Memoria disponible:
+    RAM:   38144/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 390656 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=1280 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   36864/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 389376 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  94208/131072 marcos (71.9%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 11
+
+----------------------------------
+[ANTES DE CREAR] Proceso_11
+  Tamaño: 36 MB (9216 páginas)
+  Memoria disponible:
+    RAM:   36864/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 389376 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=9216 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   27648/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 380160 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  103424/131072 marcos (78.9%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 12
+
+----------------------------------
+[ANTES DE CREAR] Proceso_12
+  Tamaño: 19 MB (4864 páginas)
+  Memoria disponible:
+    RAM:   27648/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 380160 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=4864 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   22784/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 375296 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  108288/131072 marcos (82.6%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 13
+
+----------------------------------
+[ANTES DE CREAR] Proceso_13
+  Tamaño: 31 MB (7936 páginas)
+  Memoria disponible:
+    RAM:   22784/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 375296 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=7936 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   14848/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 367360 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  116224/131072 marcos (88.7%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 14
+
+----------------------------------
+[ANTES DE CREAR] Proceso_14
+  Tamaño: 21 MB (5376 páginas)
+  Memoria disponible:
+    RAM:   14848/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 367360 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=5376 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   9472/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 361984 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  121600/131072 marcos (92.8%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 15
+
+----------------------------------
+[ANTES DE CREAR] Proceso_15
+  Tamaño: 23 MB (5888 páginas)
+  Memoria disponible:
+    RAM:   9472/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 361984 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=5888 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   3584/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 356096 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  127488/131072 marcos (97.3%)
+SWAP: 0/352512 marcos (0.0%)
+Procesos activos: 16
+
+----------------------------------
+[ANTES DE CREAR] Proceso_16
+  Tamaño: 16 MB (4096 páginas)
+  Memoria disponible:
+    RAM:   3584/131072 marcos libres
+    SWAP:  352512/352512 marcos libres
+    TOTAL: 356096 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=3584 marcos, SWAP=512 marcos
   Memoria disponible después:
     RAM:   0/131072 marcos libres
-    SWAP:  39168/80384 marcos libres
-    TOTAL: 39168 marcos disponibles
+    SWAP:  352000/352512 marcos libres
+    TOTAL: 352000 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
+--- Estado del Sistema ---
 RAM:  131072/131072 marcos (100.0%)
-SWAP: 41216/80384 marcos (51.3%)
+SWAP: 512/352512 marcos (0.1%)
+Procesos activos: 17
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P0 (creado hace 33 segundos)
+
+[TERMINAR] Proceso_0 (liberados: RAM=3328, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  127744/131072 marcos (97.5%)
+SWAP: 512/352512 marcos (0.1%)
+Procesos activos: 16
+
+----------------------------------
+[ANTES DE CREAR] Proceso_17
+  Tamaño: 8 MB (2048 páginas)
+  Memoria disponible:
+    RAM:   3328/131072 marcos libres
+    SWAP:  352000/352512 marcos libres
+    TOTAL: 355328 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=2048 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   1280/131072 marcos libres
+    SWAP:  352000/352512 marcos libres
+    TOTAL: 353280 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  129792/131072 marcos (99.0%)
+SWAP: 512/352512 marcos (0.1%)
+Procesos activos: 17
+
+----------------------------------
+[ANTES DE CREAR] Proceso_18
+  Tamaño: 16 MB (4096 páginas)
+  Memoria disponible:
+    RAM:   1280/131072 marcos libres
+    SWAP:  352000/352512 marcos libres
+    TOTAL: 353280 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=1280 marcos, SWAP=2816 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  349184/352512 marcos libres
+    TOTAL: 349184 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 3328/352512 marcos (0.9%)
+Procesos activos: 18
+
+----------------------------------
+[ANTES DE CREAR] Proceso_19
+  Tamaño: 43 MB (11008 páginas)
+  Memoria disponible:
+    RAM:   0/131072 marcos libres
+    SWAP:  349184/352512 marcos libres
+    TOTAL: 349184 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=11008 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  338176/352512 marcos libres
+    TOTAL: 338176 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 14336/352512 marcos (4.1%)
+Procesos activos: 19
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P1 (creado hace 36 segundos)
+
+[TERMINAR] Proceso_1 (liberados: RAM=12288, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  118784/131072 marcos (90.6%)
+SWAP: 14336/352512 marcos (4.1%)
+Procesos activos: 18
+
+----------------------------------
+[ANTES DE CREAR] Proceso_20
+  Tamaño: 39 MB (9984 páginas)
+  Memoria disponible:
+    RAM:   12288/131072 marcos libres
+    SWAP:  338176/352512 marcos libres
+    TOTAL: 350464 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=9984 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   2304/131072 marcos libres
+    SWAP:  338176/352512 marcos libres
+    TOTAL: 340480 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  128768/131072 marcos (98.2%)
+SWAP: 14336/352512 marcos (4.1%)
+Procesos activos: 19
+
+----------------------------------
+[ANTES DE CREAR] Proceso_21
+  Tamaño: 21 MB (5376 páginas)
+  Memoria disponible:
+    RAM:   2304/131072 marcos libres
+    SWAP:  338176/352512 marcos libres
+    TOTAL: 340480 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=2304 marcos, SWAP=3072 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  335104/352512 marcos libres
+    TOTAL: 335104 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 17408/352512 marcos (4.9%)
+Procesos activos: 20
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P2 (creado hace 39 segundos)
+
+[TERMINAR] Proceso_2 (liberados: RAM=6400, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  124672/131072 marcos (95.1%)
+SWAP: 17408/352512 marcos (4.9%)
+Procesos activos: 19
+
+----------------------------------
+[ANTES DE CREAR] Proceso_22
+  Tamaño: 30 MB (7680 páginas)
+  Memoria disponible:
+    RAM:   6400/131072 marcos libres
+    SWAP:  335104/352512 marcos libres
+    TOTAL: 341504 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=6400 marcos, SWAP=1280 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  333824/352512 marcos libres
+    TOTAL: 333824 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 18688/352512 marcos (5.3%)
+Procesos activos: 20
+
+----------------------------------
+[ANTES DE CREAR] Proceso_23
+  Tamaño: 43 MB (11008 páginas)
+  Memoria disponible:
+    RAM:   0/131072 marcos libres
+    SWAP:  333824/352512 marcos libres
+    TOTAL: 333824 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=11008 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  322816/352512 marcos libres
+    TOTAL: 322816 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 29696/352512 marcos (8.4%)
+Procesos activos: 21
+
+----------------------------------
+[ANTES DE CREAR] Proceso_24
+  Tamaño: 22 MB (5632 páginas)
+  Memoria disponible:
+    RAM:   0/131072 marcos libres
+    SWAP:  322816/352512 marcos libres
+    TOTAL: 322816 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=5632 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  317184/352512 marcos libres
+    TOTAL: 317184 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 35328/352512 marcos (10.0%)
+Procesos activos: 22
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P3 (creado hace 42 segundos)
+
+[TERMINAR] Proceso_3 (liberados: RAM=9728, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  121344/131072 marcos (92.6%)
+SWAP: 35328/352512 marcos (10.0%)
+Procesos activos: 21
+
+----------------------------------
+[ANTES DE CREAR] Proceso_25
+  Tamaño: 21 MB (5376 páginas)
+  Memoria disponible:
+    RAM:   9728/131072 marcos libres
+    SWAP:  317184/352512 marcos libres
+    TOTAL: 326912 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=5376 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   4352/131072 marcos libres
+    SWAP:  317184/352512 marcos libres
+    TOTAL: 321536 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  126720/131072 marcos (96.7%)
+SWAP: 35328/352512 marcos (10.0%)
+Procesos activos: 22
+
+----------------------------------
+[ANTES DE CREAR] Proceso_26
+  Tamaño: 42 MB (10752 páginas)
+  Memoria disponible:
+    RAM:   4352/131072 marcos libres
+    SWAP:  317184/352512 marcos libres
+    TOTAL: 321536 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=4352 marcos, SWAP=6400 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  310784/352512 marcos libres
+    TOTAL: 310784 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 41728/352512 marcos (11.8%)
 Procesos activos: 23
 
-========================================
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P4 (creado hace 45 segundos)
+
+[TERMINAR] Proceso_4 (liberados: RAM=9472, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  121600/131072 marcos (92.8%)
+SWAP: 41728/352512 marcos (11.8%)
+Procesos activos: 22
+
+----------------------------------
 [ANTES DE CREAR] Proceso_27
+  Tamaño: 46 MB (11776 páginas)
+  Memoria disponible:
+    RAM:   9472/131072 marcos libres
+    SWAP:  310784/352512 marcos libres
+    TOTAL: 320256 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=9472 marcos, SWAP=2304 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  308480/352512 marcos libres
+    TOTAL: 308480 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 44032/352512 marcos (12.5%)
+Procesos activos: 23
+
+----------------------------------
+[ANTES DE CREAR] Proceso_28
   Tamaño: 8 MB (2048 páginas)
   Memoria disponible:
     RAM:   0/131072 marcos libres
-    SWAP:  39168/80384 marcos libres
-    TOTAL: 39168 marcos disponibles
+    SWAP:  308480/352512 marcos libres
+    TOTAL: 308480 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=0 marcos, SWAP=2048 marcos
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=2048 marcos
   Memoria disponible después:
     RAM:   0/131072 marcos libres
-    SWAP:  37120/80384 marcos libres
-    TOTAL: 37120 marcos disponibles
+    SWAP:  306432/352512 marcos libres
+    TOTAL: 306432 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
+--- Estado del Sistema ---
 RAM:  131072/131072 marcos (100.0%)
-SWAP: 43264/80384 marcos (53.8%)
+SWAP: 46080/352512 marcos (13.1%)
 Procesos activos: 24
 
-=== FIFO: Seleccionando proceso más antiguo ===
-Proceso seleccionado: P4 (creado hace 46 segundos)
-
-[TERMINAR] Proceso_4 (liberados: RAM=6400, SWAP=0 marcos)
-
-=== Estado del Sistema ===
-RAM:  124672/131072 marcos (95.1%)
-SWAP: 43264/80384 marcos (53.8%)
-Procesos activos: 23
-
-========================================
-[ANTES DE CREAR] Proceso_28
-  Tamaño: 6 MB (1536 páginas)
-  Memoria disponible:
-    RAM:   6400/131072 marcos libres
-    SWAP:  37120/80384 marcos libres
-    TOTAL: 43520 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=1536 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   4864/131072 marcos libres
-    SWAP:  37120/80384 marcos libres
-    TOTAL: 41984 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  126208/131072 marcos (96.3%)
-SWAP: 43264/80384 marcos (53.8%)
-Procesos activos: 24
-
-========================================
+----------------------------------
 [ANTES DE CREAR] Proceso_29
+  Tamaño: 26 MB (6656 páginas)
+  Memoria disponible:
+    RAM:   0/131072 marcos libres
+    SWAP:  306432/352512 marcos libres
+    TOTAL: 306432 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=6656 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  299776/352512 marcos libres
+    TOTAL: 299776 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 52736/352512 marcos (15.0%)
+Procesos activos: 25
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P5 (creado hace 48 segundos)
+
+[TERMINAR] Proceso_5 (liberados: RAM=8960, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  122112/131072 marcos (93.2%)
+SWAP: 52736/352512 marcos (15.0%)
+Procesos activos: 24
+
+----------------------------------
+[ANTES DE CREAR] Proceso_30
+  Tamaño: 23 MB (5888 páginas)
+  Memoria disponible:
+    RAM:   8960/131072 marcos libres
+    SWAP:  299776/352512 marcos libres
+    TOTAL: 308736 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=5888 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   3072/131072 marcos libres
+    SWAP:  299776/352512 marcos libres
+    TOTAL: 302848 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  128000/131072 marcos (97.7%)
+SWAP: 52736/352512 marcos (15.0%)
+Procesos activos: 25
+
+----------------------------------
+[ANTES DE CREAR] Proceso_31
+  Tamaño: 17 MB (4352 páginas)
+  Memoria disponible:
+    RAM:   3072/131072 marcos libres
+    SWAP:  299776/352512 marcos libres
+    TOTAL: 302848 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=3072 marcos, SWAP=1280 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  298496/352512 marcos libres
+    TOTAL: 298496 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 54016/352512 marcos (15.3%)
+Procesos activos: 26
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P6 (creado hace 51 segundos)
+
+[TERMINAR] Proceso_6 (liberados: RAM=12544, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  118528/131072 marcos (90.4%)
+SWAP: 54016/352512 marcos (15.3%)
+Procesos activos: 25
+
+----------------------------------
+[ANTES DE CREAR] Proceso_32
+  Tamaño: 24 MB (6144 páginas)
+  Memoria disponible:
+    RAM:   12544/131072 marcos libres
+    SWAP:  298496/352512 marcos libres
+    TOTAL: 311040 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=6144 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   6400/131072 marcos libres
+    SWAP:  298496/352512 marcos libres
+    TOTAL: 304896 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  124672/131072 marcos (95.1%)
+SWAP: 54016/352512 marcos (15.3%)
+Procesos activos: 26
+
+----------------------------------
+[ANTES DE CREAR] Proceso_33
   Tamaño: 37 MB (9472 páginas)
   Memoria disponible:
-    RAM:   4864/131072 marcos libres
-    SWAP:  37120/80384 marcos libres
-    TOTAL: 41984 marcos disponibles
+    RAM:   6400/131072 marcos libres
+    SWAP:  298496/352512 marcos libres
+    TOTAL: 304896 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=4864 marcos, SWAP=4608 marcos
+[Resultado] Éxito - Asignado: RAM=6400 marcos, SWAP=3072 marcos
   Memoria disponible después:
     RAM:   0/131072 marcos libres
-    SWAP:  32512/80384 marcos libres
-    TOTAL: 32512 marcos disponibles
+    SWAP:  295424/352512 marcos libres
+    TOTAL: 295424 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
+--- Estado del Sistema ---
 RAM:  131072/131072 marcos (100.0%)
-SWAP: 47872/80384 marcos (59.6%)
-Procesos activos: 25
-
-=== FIFO: Seleccionando proceso más antiguo ===
-Proceso seleccionado: P5 (creado hace 49 segundos)
-
-[TERMINAR] Proceso_5 (liberados: RAM=7936, SWAP=0 marcos)
-
-=== Estado del Sistema ===
-RAM:  123136/131072 marcos (93.9%)
-SWAP: 47872/80384 marcos (59.6%)
-Procesos activos: 24
-
-========================================
-[ANTES DE CREAR] Proceso_30
-  Tamaño: 14 MB (3584 páginas)
-  Memoria disponible:
-    RAM:   7936/131072 marcos libres
-    SWAP:  32512/80384 marcos libres
-    TOTAL: 40448 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=3584 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   4352/131072 marcos libres
-    SWAP:  32512/80384 marcos libres
-    TOTAL: 36864 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  126720/131072 marcos (96.7%)
-SWAP: 47872/80384 marcos (59.6%)
-Procesos activos: 25
-
-========================================
-[ANTES DE CREAR] Proceso_31
-  Tamaño: 13 MB (3328 páginas)
-  Memoria disponible:
-    RAM:   4352/131072 marcos libres
-    SWAP:  32512/80384 marcos libres
-    TOTAL: 36864 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=3328 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   1024/131072 marcos libres
-    SWAP:  32512/80384 marcos libres
-    TOTAL: 33536 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  130048/131072 marcos (99.2%)
-SWAP: 47872/80384 marcos (59.6%)
-Procesos activos: 26
-
-========================================
-[ANTES DE CREAR] Proceso_32
-  Tamaño: 29 MB (7424 páginas)
-  Memoria disponible:
-    RAM:   1024/131072 marcos libres
-    SWAP:  32512/80384 marcos libres
-    TOTAL: 33536 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=1024 marcos, SWAP=6400 marcos
-  Memoria disponible después:
-    RAM:   0/131072 marcos libres
-    SWAP:  26112/80384 marcos libres
-    TOTAL: 26112 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 54272/80384 marcos (67.5%)
+SWAP: 57088/352512 marcos (16.2%)
 Procesos activos: 27
 
-=== FIFO: Seleccionando proceso más antiguo ===
-Proceso seleccionado: P6 (creado hace 52 segundos)
-
-[TERMINAR] Proceso_6 (liberados: RAM=2560, SWAP=0 marcos)
-
-=== Estado del Sistema ===
-RAM:  128512/131072 marcos (98.0%)
-SWAP: 54272/80384 marcos (67.5%)
-Procesos activos: 26
-
-========================================
-[ANTES DE CREAR] Proceso_33
-  Tamaño: 5 MB (1280 páginas)
-  Memoria disponible:
-    RAM:   2560/131072 marcos libres
-    SWAP:  26112/80384 marcos libres
-    TOTAL: 28672 marcos disponibles
-
-[RESULTADO] ÉXITO - Asignado: RAM=1280 marcos, SWAP=0 marcos
-  Memoria disponible después:
-    RAM:   1280/131072 marcos libres
-    SWAP:  26112/80384 marcos libres
-    TOTAL: 27392 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  129792/131072 marcos (99.0%)
-SWAP: 54272/80384 marcos (67.5%)
-Procesos activos: 27
-
-========================================
+----------------------------------
 [ANTES DE CREAR] Proceso_34
-  Tamaño: 43 MB (11008 páginas)
+  Tamaño: 44 MB (11264 páginas)
   Memoria disponible:
-    RAM:   1280/131072 marcos libres
-    SWAP:  26112/80384 marcos libres
-    TOTAL: 27392 marcos disponibles
+    RAM:   0/131072 marcos libres
+    SWAP:  295424/352512 marcos libres
+    TOTAL: 295424 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=1280 marcos, SWAP=9728 marcos
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=11264 marcos
   Memoria disponible después:
     RAM:   0/131072 marcos libres
-    SWAP:  16384/80384 marcos libres
-    TOTAL: 16384 marcos disponibles
+    SWAP:  284160/352512 marcos libres
+    TOTAL: 284160 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
+--- Estado del Sistema ---
 RAM:  131072/131072 marcos (100.0%)
-SWAP: 64000/80384 marcos (79.6%)
+SWAP: 68352/352512 marcos (19.4%)
 Procesos activos: 28
 
-=== FIFO: Seleccionando proceso más antiguo ===
-Proceso seleccionado: P7 (creado hace 55 segundos)
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P7 (creado hace 54 segundos)
 
-[TERMINAR] Proceso_7 (liberados: RAM=2816, SWAP=0 marcos)
+[TERMINAR] Proceso_7 (liberados: RAM=10496, SWAP=0 marcos)
 
-=== Estado del Sistema ===
-RAM:  128256/131072 marcos (97.9%)
-SWAP: 64000/80384 marcos (79.6%)
+--- Estado del Sistema ---
+RAM:  120576/131072 marcos (92.0%)
+SWAP: 68352/352512 marcos (19.4%)
 Procesos activos: 27
 
-========================================
+----------------------------------
 [ANTES DE CREAR] Proceso_35
-  Tamaño: 43 MB (11008 páginas)
+  Tamaño: 50 MB (12800 páginas)
   Memoria disponible:
-    RAM:   2816/131072 marcos libres
-    SWAP:  16384/80384 marcos libres
-    TOTAL: 19200 marcos disponibles
+    RAM:   10496/131072 marcos libres
+    SWAP:  284160/352512 marcos libres
+    TOTAL: 294656 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=2816 marcos, SWAP=8192 marcos
+[Resultado] Éxito - Asignado: RAM=10496 marcos, SWAP=2304 marcos
   Memoria disponible después:
     RAM:   0/131072 marcos libres
-    SWAP:  8192/80384 marcos libres
-    TOTAL: 8192 marcos disponibles
+    SWAP:  281856/352512 marcos libres
+    TOTAL: 281856 marcos disponibles
 ========================================
 
-=== Estado del Sistema ===
+--- Estado del Sistema ---
 RAM:  131072/131072 marcos (100.0%)
-SWAP: 72192/80384 marcos (89.8%)
+SWAP: 70656/352512 marcos (20.0%)
 Procesos activos: 28
 
-========================================
+----------------------------------
 [ANTES DE CREAR] Proceso_36
+  Tamaño: 22 MB (5632 páginas)
+  Memoria disponible:
+    RAM:   0/131072 marcos libres
+    SWAP:  281856/352512 marcos libres
+    TOTAL: 281856 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=5632 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  276224/352512 marcos libres
+    TOTAL: 276224 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 76288/352512 marcos (21.6%)
+Procesos activos: 29
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P8 (creado hace 57 segundos)
+
+[TERMINAR] Proceso_8 (liberados: RAM=7424, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  123648/131072 marcos (94.3%)
+SWAP: 76288/352512 marcos (21.6%)
+Procesos activos: 28
+
+----------------------------------
+[ANTES DE CREAR] Proceso_37
+  Tamaño: 42 MB (10752 páginas)
+  Memoria disponible:
+    RAM:   7424/131072 marcos libres
+    SWAP:  276224/352512 marcos libres
+    TOTAL: 283648 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=7424 marcos, SWAP=3328 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  272896/352512 marcos libres
+    TOTAL: 272896 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 79616/352512 marcos (22.6%)
+Procesos activos: 29
+
+----------------------------------
+[ANTES DE CREAR] Proceso_38
+  Tamaño: 34 MB (8704 páginas)
+  Memoria disponible:
+    RAM:   0/131072 marcos libres
+    SWAP:  272896/352512 marcos libres
+    TOTAL: 272896 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=8704 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  264192/352512 marcos libres
+    TOTAL: 264192 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 88320/352512 marcos (25.1%)
+Procesos activos: 30
+
+----------------------------------
+[ANTES DE CREAR] Proceso_39
+  Tamaño: 46 MB (11776 páginas)
+  Memoria disponible:
+    RAM:   0/131072 marcos libres
+    SWAP:  264192/352512 marcos libres
+    TOTAL: 264192 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=0 marcos, SWAP=11776 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  252416/352512 marcos libres
+    TOTAL: 252416 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 100096/352512 marcos (28.4%)
+Procesos activos: 31
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P9 (creado hace 60 segundos)
+
+[TERMINAR] Proceso_9 (liberados: RAM=12288, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  118784/131072 marcos (90.6%)
+SWAP: 100096/352512 marcos (28.4%)
+Procesos activos: 30
+
+----------------------------------
+[ANTES DE CREAR] Proceso_40
+  Tamaño: 33 MB (8448 páginas)
+  Memoria disponible:
+    RAM:   12288/131072 marcos libres
+    SWAP:  252416/352512 marcos libres
+    TOTAL: 264704 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=8448 marcos, SWAP=0 marcos
+  Memoria disponible después:
+    RAM:   3840/131072 marcos libres
+    SWAP:  252416/352512 marcos libres
+    TOTAL: 256256 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  127232/131072 marcos (97.1%)
+SWAP: 100096/352512 marcos (28.4%)
+Procesos activos: 31
+
+----------------------------------
+[ANTES DE CREAR] Proceso_41
+  Tamaño: 28 MB (7168 páginas)
+  Memoria disponible:
+    RAM:   3840/131072 marcos libres
+    SWAP:  252416/352512 marcos libres
+    TOTAL: 256256 marcos disponibles
+
+[Resultado] Éxito - Asignado: RAM=3840 marcos, SWAP=3328 marcos
+  Memoria disponible después:
+    RAM:   0/131072 marcos libres
+    SWAP:  249088/352512 marcos libres
+    TOTAL: 249088 marcos disponibles
+========================================
+
+--- Estado del Sistema ---
+RAM:  131072/131072 marcos (100.0%)
+SWAP: 103424/352512 marcos (29.3%)
+Procesos activos: 32
+
+--- FIFO: Seleccionando proceso más antiguo ---
+Proceso seleccionado: P10 (creado hace 63 segundos)
+
+[TERMINAR] Proceso_10 (liberados: RAM=1280, SWAP=0 marcos)
+
+--- Estado del Sistema ---
+RAM:  129792/131072 marcos (99.0%)
+SWAP: 103424/352512 marcos (29.3%)
+Procesos activos: 31
+
+----------------------------------
+[ANTES DE CREAR] Proceso_42
   Tamaño: 25 MB (6400 páginas)
   Memoria disponible:
-    RAM:   0/131072 marcos libres
-    SWAP:  8192/80384 marcos libres
-    TOTAL: 8192 marcos disponibles
+    RAM:   1280/131072 marcos libres
+    SWAP:  249088/352512 marcos libres
+    TOTAL: 250368 marcos disponibles
 
-[RESULTADO] ÉXITO - Asignado: RAM=0 marcos, SWAP=6400 marcos
+[Resultado] Éxito - Asignado: RAM=1280 marcos, SWAP=5120 marcos
   Memoria disponible después:
     RAM:   0/131072 marcos libres
-    SWAP:  1792/80384 marcos libres
-    TOTAL: 1792 marcos disponibles
-========================================
-
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 78592/80384 marcos (97.8%)
-Procesos activos: 29
-
-========================================
-[ANTES DE CREAR] Proceso_37
-  Tamaño: 43 MB (11008 páginas)
-  Memoria disponible:
-    RAM:   0/131072 marcos libres
-    SWAP:  1792/80384 marcos libres
-    TOTAL: 1792 marcos disponibles
-
-[RESULTADO] FALLO - No hay memoria suficiente
-
-=== Estado del Sistema ===
-RAM:  131072/131072 marcos (100.0%)
-SWAP: 78592/80384 marcos (97.8%)
-Procesos activos: 29
-
-
-=== ESTADO FINAL DE LA MEMORIA ===
-Total de procesos creados: 37
-
-=== RAM ===
-Dimensiones: 362 x 363 = 131072 marcos
-Uso: 131072/131072 marcos (100.0%)
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-[P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17][P17]
-... (matriz truncada)
-
-=== SWAP ===
-Dimensiones: 283 x 285 = 80384 marcos
-Uso: 78592/80384 marcos (97.8%)
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-[P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16][P16]
-... (matriz truncada)
-
-=== SIMULACIÓN TERMINADA ===
+    SWAP:  243
